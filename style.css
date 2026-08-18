@@ -34,3 +34,34 @@
   .founder-notes{grid-template-columns:1fr}
   .founder-notes article{min-height:0}
 }
+
+
+/* v0.3.1 — signature spacing fix */
+.signature-wrap{
+  height:auto;
+  min-height:110px;
+  margin-top:34px;
+  padding-top:8px;
+  overflow:visible;
+}
+.signature-wrap img{
+  display:block;
+  width:min(210px,70%);
+  max-width:210px;
+  max-height:82px;
+  object-fit:contain;
+  object-position:left center;
+}
+@media(max-width:760px){
+  .signature-wrap{
+    min-height:120px;
+    margin-top:30px;
+    margin-bottom:18px;
+    padding-top:10px;
+  }
+  .signature-wrap img{
+    width:min(190px,62vw);
+    max-width:190px;
+    max-height:78px;
+  }
+}
